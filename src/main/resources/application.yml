@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: configServer
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/CNthomas/cloundConfig.git
+          search-paths: /**
+      label: master
+      username: 201904342@qq.com
+      password: asusx88s
+management:
+  endpoint:
+    web:
+     exposure:
+       include: bus-refresh
