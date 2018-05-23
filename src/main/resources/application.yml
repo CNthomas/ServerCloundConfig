@@ -19,3 +19,5 @@ management:
     web:
      exposure:
        include: bus-refresh
+logging:
+  file: /home/logs/${server.servlet.context-path}.${server.port}.log
